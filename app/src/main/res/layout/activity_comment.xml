@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Comment">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="TextView" />
+
+
+    >
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/comment_recyclerView"
+        android:layout_below="@+id/t1"
+        android:layout_above="@+id/comment_linear_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/comment_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1"
+        android:elevation="4dp"
+        android:layout_margin="1dp"
+        android:background="@android:color/white"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/post_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:background="@null"
+            android:inputType="textPersonName"
+            android:text="Name"/>
+
+
+
+        <ImageButton
+            android:id="@+id/post_image_button"
+            android:layout_width="50dp"
+            android:src="@android:drawable/ic_menu_send"
+            android:layout_height="match_parent"></ImageButton>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

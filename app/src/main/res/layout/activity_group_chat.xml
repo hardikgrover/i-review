@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupChatActivity">
+    <include
+        android:id="@+id/group_chat_bar_layout"
+        layout="@layout/app_bar_layout">
+
+    </include>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/group_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear_layout"
+        android:layout_below="@id/group_chat_bar_layout"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:hint="please write a message"
+            android:padding="17dp"></EditText>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send_message"
+            android:id="@+id/send_message_button"
+            ></ImageButton>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

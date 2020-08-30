@@ -1,0 +1,2 @@
+rootProject.name='WhatsApp1'
+include ':app'

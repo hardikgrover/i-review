@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F6FBFB">
+    <include
+        layout = "@layout/app_bar_layout"
+        android:id="@+id/main_page_toolbar"
+        >
+
+    </include>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/main_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/cardview_shadow_end_color">
+            <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_tabs_pager"
+        android:layout_below="@+id/main_page_toolbar"
+        android:layout_above="@+id/appBarLayout"></androidx.viewpager.widget.ViewPager>
+
+
+</RelativeLayout>

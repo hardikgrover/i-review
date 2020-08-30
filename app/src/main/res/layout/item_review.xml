@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30px"
+    android:layout_marginRight="30px"
+    android:layout_marginBottom="30px"
+    android:background="@drawable/radius"
+
+
+
+    android:elevation="2dp"
+
+    tools:context=".MainActivity">
+<LinearLayout
+    android:id="@+id/comment_l1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginBottom="10dp"
+
+
+    >
+    <TextView
+        android:id="@+id/textButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/comment_image"
+        android:textAllCaps="true"
+        android:text="hg"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="7dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">-->
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="user name"
+                ></TextView>
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="city"
+                android:textAlignment="textStart"
+                android:textSize="18dp"></TextView>
+        </LinearLayout>
+            <TextView
+                android:id="@+id/dateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="date time"
+                android:textSize="13dp"></TextView>
+
+        </LinearLayout>
+       <!-- <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="#F4F4F8"
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="#F3F3F7"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/comment"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/comment" />
+
+                <TextView
+                    android:id="@+id/comment1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="comment" />
+            </LinearLayout>
+
+
+        </LinearLayout>-->
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/comment_l2"
+        android:layout_below="@+id/comment_l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        >
+        <TextView
+
+            android:id="@+id/post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="write your comment here"
+            android:textSize="19dp"></TextView>
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="4dp"
+            android:background="#E3E3EA"></TextView>
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <ImageButton
+                android:id="@+id/comment_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/replyicon1"
+               ></ImageButton>
+
+        <TextView
+            android:id="@+id/comment_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reply"
+            android:layout_marginLeft="10dp"></TextView>
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

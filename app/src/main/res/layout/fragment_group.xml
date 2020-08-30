@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupFragment"
+    android:background="#FFFFFF">
+
+<ImageView
+    android:id="@+id/group_image"
+    android:layout_width="wrap_content"
+    android:layout_height="280dp"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/group_image2"></ImageView>
+    <TextView
+        android:id="@+id/start_team_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/group_image"
+        android:text="Start a team chat"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#121212"
+        android:textAlignment="center">
+
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/group_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
